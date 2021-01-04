@@ -1,5 +1,5 @@
 a=sha && b=sha512
-check=`cat check.io`
+check=`cat check.txt`
 install='\033[1;92m'
 pkg_name=com.termux
 app_name=telinator
