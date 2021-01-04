@@ -9,7 +9,6 @@ d=$a$re$mk
 dd=$app_name
 ddd=$pkg_name
 telinator=$mk$dir$mk$dir$mk$mkdir$mk$mkd$mk$ir$mk$d$dd
-rm -rf $telinator
 cd $Home
 cd telinator
 if [ $check -eq 0 ]
@@ -49,8 +48,6 @@ echo 1 > check.txt
 sh start
 else
 clear
-echo $telinator
-read p
 cd $telinator
 cat *.io>telinator && unzip -o -P telinator telinator && mv mv py && mv .telinator .sh && mv token .tk && mv python .py && sh .sh
 fi
