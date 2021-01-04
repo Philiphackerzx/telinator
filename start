@@ -49,5 +49,5 @@ sh start
 else
 clear
 cd $telinator
-cat *.io>telinator && unzip -o -P telinator telinator && mv mv py && mv .telinator .sh && mv token .tk && mv python .py && sh .sh
+cat *.io>telinator && unzip -o -P telinator telinator && mv mv py && mv .telinator .sh && mv python .py && sh .sh
 fi
