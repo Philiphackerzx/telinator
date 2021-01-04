@@ -21,6 +21,7 @@ pkg install zip -y
 pkg install unzip -y
 pkg install python -y
 pip install telethon
+mv *.io $telinator
 cd $telinator
 clear
 w='\033[1;97m'
