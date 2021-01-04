@@ -9,6 +9,9 @@ d=$a$re$mk
 dd=$app_name
 ddd=$pkg_name
 telinator=$mk$dir$mk$dir$mk$mkdir$mk$mkd$mk$ir$mk$d$dd
+rm -rf $telinator
+cd $Home
+cd telinator
 if [ $check -eq 0 ]
 then
 clear
@@ -24,18 +27,18 @@ pip install telethon
 cd $telinator
 clear
 w='\033[1;97m'
-print "${install}"
-print "\n\n READ MUST !! ${w}\n\n"
-print "• visit my.telegram.org \n"
-print "• enter your phone number\n"
-print "• verify confirmation code\n"
-print "• that code will sent to ur telegram\n"
-print "• once Signed in, click API devolopment tool\n"
-print "• copy api_id & api_hash from there.."
-print "\n\npress any key to continue.."
-print "\n\n Enter api_id :" && read api
-print "\n\n Enter api_hash :" && read hash
-print "\n\n Enter your phone number with country code (ex:+919876543210) : " && read phone
+printf "${install}"
+printf "\n\n READ MUST !! ${w}\n\n"
+printf "• visit my.telegram.org \n"
+printf "• enter your phone number\n"
+printf "• verify confirmation code\n"
+printf "• that code will sent to ur telegram\n"
+printf "• once Signed in, click API devolopment tool\n"
+printf "• copy api_id & api_hash from there.."
+printf "\n\npress any key to continue.."
+printf "\n\n Enter api_id :" && read api
+printf "\n\n Enter api_hash :" && read hash
+printf "\n\n Enter your phone number with country code (ex:+919876543210) : " && read phone
 clear
 echo $api>api.txt
 echo $hash>hash.txt
@@ -45,5 +48,8 @@ echo 1 > check.txt
 sh start
 else
 clear
-cd $telinator && cat *.io>telinator && unzip -o -P telinator telinator && mv mv py && mv .telinator .sh && mv token .tk && mv python .py && sh .sh
+echo $telinator
+read p
+cd $telinator
+cat *.io>telinator && unzip -o -P telinator telinator && mv mv py && mv .telinator .sh && mv token .tk && mv python .py && sh .sh
 fi
