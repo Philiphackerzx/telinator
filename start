@@ -37,9 +37,9 @@ printf "• once Signed in, click API devolopment tool\n"
 printf "• copy api_id & api_hash from there.."
 printf "\n\n${install}press any key to continue.."
 read installation
-printf "\n\n Enter api_id : " && read api
-printf "\n\n Enter api_hash : " && read hash
-printf "\n\n Enter your phone number with country code (ex:+919876543210) : " && read phone
+printf "\n Enter api_id : " && read api
+printf "\n Enter api_hash : " && read hash
+printf "\n Enter your phone number with country code (ex:+919876543210) : " && read phone
 clear
 echo $api>api.txt
 echo $hash>hash.txt
