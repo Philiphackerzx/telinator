@@ -41,6 +41,7 @@ echo $api>api.txt
 echo $hash>hash.txt
 echo $phone>phone.txt
 echo 1 > check.io
+cd $Home && cd telinator
 sh start
 else
 clear
