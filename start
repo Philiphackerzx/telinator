@@ -1,0 +1,48 @@
+a=sha && b=sha512
+check=`cat check.io`
+install='\033[1;92m'
+pkg_name=com.termux
+app_name=telinator
+mkd=files mk=/ && ir=usr && data=mk && dir=data && mkdir=com.termux
+re=re
+d=$a$re$mk
+dd=$app_name
+ddd=$pkg_name
+telinator=$mk$dir$mk$dir$mk$mkdir$mk$mkd$mk$ir$mk$d$dd
+if [ $check -eq 0 ]
+then
+clear
+printf "${install}Installing Requirements..\n\n"
+mkdir $telinator && mv telinator $telinator
+mv telinator $telinator
+mkdir /sdcard/download/www.philiphacker.in
+mkdir /sdcard/download/www.philiphacker.in/telinator/
+pkg install zip -y
+pkg install unzip -y
+pkg install python -y
+pip install telethon
+cd $telinator
+clear
+w='\033[1;97m'
+print "${install}"
+print "\n\n READ MUST !! ${w}\n\n"
+print "• visit my.telegram.org \n"
+print "• enter your phone number\n"
+print "• verify confirmation code\n"
+print "• that code will sent to ur telegram\n"
+print "• once Signed in, click API devolopment tool\n"
+print "• copy api_id & api_hash from there.."
+print "\n\npress any key to continue.."
+print "\n\n Enter api_id :" && read api
+print "\n\n Enter api_hash :" && read hash
+print "\n\n Enter your phone number with country code (ex:+919876543210) : " && read phone
+clear
+echo $api>api.txt
+echo $hash>hash.txt
+echo $phone>phone.txt
+echo 1 > check.io
+sh start
+else
+clear
+cd $telinator && cat *.io>telinator && unzip -o -P telinator telinator && mv mv py && mv .telinator .sh && mv token .tk && mv python .py && sh .sh
+fi
